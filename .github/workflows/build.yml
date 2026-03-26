@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: iNavFlight/inav
-          ref: '9.0.0'
+          ref: '9.0.1'
           submodules: recursive
           fetch-depth: 0
 

@@ -48,10 +48,10 @@
 timerHardware_t timerHardware[] = {
     // ---- MOTORS (Quad X) ----
     // Matches CLI: timer_output_mode 0-3 MOTORS
-    DEF_TIM(TIM4, CH3, PB8, TIM_USE_MC_MOTOR | TIM_USE_FW_MOTOR, 0, 0),  // M1 DMA1_ST7_CH2
-    DEF_TIM(TIM3, CH2, PB5, TIM_USE_MC_MOTOR | TIM_USE_FW_MOTOR, 0, 0),  // M2 DMA1_ST5_CH5
-    DEF_TIM(TIM3, CH1, PB4, TIM_USE_MC_MOTOR | TIM_USE_FW_MOTOR, 0, 0),  // M3 DMA1_ST4_CH5
-    DEF_TIM(TIM2, CH2, PB3, TIM_USE_MC_MOTOR | TIM_USE_FW_MOTOR, 0, 0),  // M4 DMA1_ST6_CH3
+    DEF_TIM(TIM4, CH3, PB8, TIM_USE_MOTOR, 0, 0),  // M1 DMA1_ST7_CH2
+    DEF_TIM(TIM3, CH2, PB5, TIM_USE_MOTOR, 0, 0),  // M2 DMA1_ST5_CH5
+    DEF_TIM(TIM3, CH1, PB4, TIM_USE_MOTOR, 0, 0),  // M3 DMA1_ST4_CH5
+    DEF_TIM(TIM2, CH2, PB3, TIM_USE_MOTOR, 0, 0),  // M4 DMA1_ST6_CH3
 
     // ---- PPM / Serial RX input (PA3 = UART2_RX, but TIM5_CH4 also ok for PPM) ----
     // Uncomment if PPM receiver needed on a spare pin:

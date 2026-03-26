@@ -39,7 +39,7 @@ jobs:
         run: |
           mkdir -p build
           cd build
-          cmake .. -DTARGET= WeActF405 -G Ninja
+          cmake .. -DTARGET=WeActF405 -G Ninja
           ninja WeActF405
 
       - name: Show build output files

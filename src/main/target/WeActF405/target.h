@@ -19,7 +19,6 @@
  *
  * Pin summary:
  *   IMU      : SPI2  PB13(SCK)/PC2(MISO)/PC3(MOSI)  CS=PB12
- *   SD Card  : SPI1  PA5(SCK)/PA6(MISO)/PA7(MOSI)  CS=PA4
  *   GPS      : UART1 PB6(TX)/PB7(RX)
  *   Receiver : UART2 PA2(TX)/PA3(RX) — IBUS
  *   Spare    : UART3 PA9(TX)/PA10(RX)
@@ -43,10 +42,6 @@
 #define BEEPER_INVERTED
 
 #define USE_SPI
-#define USE_SPI_DEVICE_1
-#define SPI1_SCK_PIN                    PA5
-#define SPI1_MISO_PIN                   PA6
-#define SPI1_MOSI_PIN                   PA7
 
 #define USE_SPI_DEVICE_2
 #define SPI2_SCK_PIN                    PB13
@@ -57,30 +52,6 @@
 #define MPU9250_CS_PIN                  PB12
 #define MPU9250_SPI_BUS                 BUS_SPI2
 #define IMU_MPU9250_ALIGN               CW0_DEG
-
-#define USE_IMU_MPU6500
-#define MPU6500_CS_PIN               	PB12
-#define MPU6500_SPI_BUS              	BUS_SPI2
-#define IMU_MPU6500_ALIGN            	CW0_DEG
-
-#define USE_SPI_DEVICE_3
-#define SPI3_SCK_PIN                    PC10
-#define SPI3_MISO_PIN                   PC11
-#define SPI3_MOSI_PIN                   PC12
-
-#define USE_SDCARD
-#define USE_SDCARD_SPI
-#define SDCARD_SPI_BUS                  BUS_SPI1
-#define SDCARD_CS_PIN                   PA4
-#define SDCARD_DETECT_PIN               NONE
-
-#define USE_SDCARD_SPI_1 
-
-#define SDCARD_SPI_INITIALIZATION_CLOCK_DIVIDER 256 
-#define SDCARD_SPI_FULL_SPEED_CLOCK_DIVIDER     4
-
-#define USE_BLACKBOX
-#define BLACKBOX_DEFAULT_DEVICE         BLACKBOX_DEVICE_SDCARD
 
 #define USE_VCP
 

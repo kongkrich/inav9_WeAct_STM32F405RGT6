@@ -74,6 +74,9 @@
 #define SDCARD_CS_PIN                   PA4
 #define SDCARD_DETECT_PIN               NONE
 
+#define SDCARD_SPI_INITIALIZATION_CLOCK_DIVIDER 256 
+#define SDCARD_SPI_FULL_SPEED_CLOCK_DIVIDER     4
+
 #define USE_VCP
 
 #define USE_UART1

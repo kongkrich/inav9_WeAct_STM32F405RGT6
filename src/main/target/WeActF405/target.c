@@ -63,23 +63,4 @@ timerHardware_t timerHardware[] = {
     //       If you want LED strip, use a different pin e.g. PA0 (TIM5_CH1).
 };
 
-const spiHardware_t spiHardware[] = {
-    {
-        .device = SPI1,
-        .sckPin = IO_TAG(PA5),
-        .misoPin = IO_TAG(PA6),
-        .mosiPin = IO_TAG(PA7),
-        .nssPin = IO_TAG(NONE), // ต้องมีช่องนี้
-        .af = GPIO_AF5_SPI1
-    },
-    {
-        .device = SPI2,
-        .sckPin = IO_TAG(PB13),
-        .misoPin = IO_TAG(PC2),
-        .mosiPin = IO_TAG(PC3),
-        .nssPin = IO_TAG(NONE),
-        .af = GPIO_AF5_SPI2
-    }
-};
-
 const int timerHardwareCount = sizeof(timerHardware) / sizeof(timerHardware[0]);

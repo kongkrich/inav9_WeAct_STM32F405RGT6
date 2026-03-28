@@ -44,8 +44,6 @@
 
 #define USE_SPI
 
-#define SPI2_NSS_PIN                    PB12
-
 #define USE_SPI_DEVICE_2
 #define SPI2_NSS_PIN                    PB12
 #define SPI2_SCK_PIN                    PB13
@@ -62,6 +60,8 @@
 #define SDCARD_SPI_BUS                  BUS_SPI2
 #define SDCARD_CS_PIN                   PC1
 #define SDCARD_DETECT_PIN               NONE
+#define SDCARD_SPI_INITIALIZATION_CLOCK_DIVIDER  256
+#define SDCARD_SPI_FULL_SPEED_CLOCK_DIVIDER      4
 
 #define USE_VCP
 

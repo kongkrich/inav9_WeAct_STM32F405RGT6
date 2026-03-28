@@ -19,7 +19,6 @@
  *
  * Pin summary:
  *   IMU      : SPI2  PB13(SCK)/PC2(MISO)/PC3(MOSI)  CS=PB12
- *   SDCard   : SPI2  PB13(SCK)/PC2(MISO)/PC3(MOSI)  CS=PC1
  *   GPS      : UART1 PB6(TX)/PB7(RX)
  *   Receiver : UART2 PA2(TX)/PA3(RX) — IBUS
  *   Spare    : UART3 PA9(TX)/PA10(RX)
@@ -45,7 +44,6 @@
 #define USE_SPI
 
 #define USE_SPI_DEVICE_2
-#define SPI2_NSS_PIN                    PB12
 #define SPI2_SCK_PIN                    PB13
 #define SPI2_MISO_PIN                   PC2
 #define SPI2_MOSI_PIN                   PC3
@@ -54,14 +52,6 @@
 #define MPU9250_CS_PIN                  PB12
 #define MPU9250_SPI_BUS                 BUS_SPI2
 #define IMU_MPU9250_ALIGN               CW0_DEG
-
-#define USE_SDCARD
-#define USE_SDCARD_SPI
-#define SDCARD_SPI_BUS                  BUS_SPI2
-#define SDCARD_CS_PIN                   PC1
-#define SDCARD_DETECT_PIN               NONE
-#define SDCARD_SPI_INITIALIZATION_CLOCK_DIVIDER  256
-#define SDCARD_SPI_FULL_SPEED_CLOCK_DIVIDER      4
 
 #define USE_VCP
 

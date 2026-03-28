@@ -44,6 +44,8 @@
 
 #define USE_SPI
 
+#define SPI2_NSS_PIN                    PB12
+
 #define USE_SPI_DEVICE_2
 #define SPI2_SCK_PIN                    PB13
 #define SPI2_MISO_PIN                   PC2
@@ -54,11 +56,11 @@
 #define MPU9250_SPI_BUS                 BUS_SPI2
 #define IMU_MPU9250_ALIGN               CW0_DEG
 
-#define USE_SDCARD
-#define USE_SDCARD_SPI
-#define SDCARD_SPI_BUS                  BUS_SPI2
-#define SDCARD_CS_PIN                   PC1
-#define SDCARD_DETECT_PIN               NONE
+//#define USE_SDCARD
+//#define USE_SDCARD_SPI
+//#define SDCARD_SPI_BUS                  BUS_SPI2
+//#define SDCARD_CS_PIN                   PC1
+//#define SDCARD_DETECT_PIN               NONE
 
 #define USE_VCP
 
